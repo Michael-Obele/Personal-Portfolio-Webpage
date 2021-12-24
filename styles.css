@@ -27,6 +27,7 @@ body {
 }
 
 .welcome-section > p {
+  font-family: var(--bs-font-monospace);
   font-size: 30px;
   /* color: yellow; */
 color: var(--bs-yellow);
