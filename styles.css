@@ -24,12 +24,12 @@ body {
 
 #welcome-section h1 {
   font-family: var(--bs-font-monospace);
-  /* font-size: calc(85px + 1.5vw); */
+  font-size: calc(2rem + 1.5vw);
 }
 
 .welcome-section > p {
   font-family: var(--bs-font-monospace);
-  /* font-size: 30px; */
+  font-size: 1rem;
   color: var(--bs-yellow);
 }
 #name {
@@ -39,7 +39,7 @@ body {
   color: var(--b-color);
   transition: color 0.3s ease-out;
 }
-#name:hover .code{
+#name:hover .code {
   color: var(--bs-danger);
 }
 /* End of Welcome Section */
@@ -54,9 +54,8 @@ footer {
   padding-top: calc(80vh - 10%);
   height: 100vh;
 }
-#copyright{
+#copyright {
   background-color: rgba(0, 0, 0, 0.2);
-  
 }
 
 /* End of Footer Section */
@@ -68,17 +67,23 @@ footer {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #welcome-section h1 {
     font-size: calc(85px + 1.5vw);
   }
+  #welcome-section p{
+    font-size: calc(25px + 0.5vw);
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
