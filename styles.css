@@ -22,14 +22,13 @@ body {
 }
 
 #welcome-section h1 {
-  /* font-size: 80px ; */
+  font-family: var(--bs-font-monospace);
   font-size: calc(85px + 1.5vw);
 }
 
 .welcome-section > p {
   font-family: var(--bs-font-monospace);
   font-size: 30px;
-  /* color: yellow; */
 color: var(--bs-yellow);
 }
 
