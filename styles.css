@@ -54,8 +54,14 @@ body {
   justify-content: center;
   color: brown;
 }
+.card:hover .texts{
+color: aliceblue;
+}
 .card{
-  margin-top: 30px;
+  margin-top: 20vh;
+}
+.card > img{
+  height: 240px;
 }
 /* End of Project Section */
 /* Start of Footer Section */
