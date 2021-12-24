@@ -9,7 +9,7 @@
 body {
   background-color: #181818;
 }
-/* Welcome Section */
+/* Start of Welcome Section */
 
 .welcome-section {
   display: flex;
@@ -37,16 +37,20 @@ body {
 }
 .code {
   color: var(--b-color);
+  transition: color 0.3s ease-out;
+}
+#name:hover .code{
+  color: var(--bs-danger);
 }
 
-/* Welcome Section */
-/* Project Section */
+/* End of Welcome Section */
+/* Start of Project Section */
 .projects-section {
   width: 100%;
   height: 100vh;
 }
-/* Project Section */
-/* Footer Section */
+/* End of Project Section */
+/* Start of Footer Section */
 footer {
   width: 100%;
   height: 100vh;
@@ -57,4 +61,4 @@ footer > #text {
   font-size: 5vh;
   font-size: calc(100wh + 10vh);
 }
-/* Footer Section */
+/* End of Footer Section */
