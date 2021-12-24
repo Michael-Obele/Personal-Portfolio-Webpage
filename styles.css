@@ -24,12 +24,12 @@ body {
 
 #welcome-section h1 {
   font-family: var(--bs-font-monospace);
-  font-size: calc(85px + 1.5vw);
+  /* font-size: calc(85px + 1.5vw); */
 }
 
 .welcome-section > p {
   font-family: var(--bs-font-monospace);
-  font-size: 30px;
+  /* font-size: 30px; */
   color: var(--bs-yellow);
 }
 #name {
@@ -42,7 +42,6 @@ body {
 #name:hover .code{
   color: var(--bs-danger);
 }
-
 /* End of Welcome Section */
 /* Start of Project Section */
 .projects-section {
@@ -52,13 +51,34 @@ body {
 /* End of Project Section */
 /* Start of Footer Section */
 footer {
-  width: 100%;
+  padding-top: calc(80vh - 10%);
   height: 100vh;
 }
-footer > #text {
-  padding-top: 20%;
-  margin-bottom: calc(100vh - 20%);
-  font-size: 5vh;
-  font-size: calc(100wh + 10vh);
+#copyright{
+  background-color: rgba(0, 0, 0, 0.2);
+  
 }
+
 /* End of Footer Section */
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #welcome-section h1 {
+    font-size: calc(85px + 1.5vw);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
