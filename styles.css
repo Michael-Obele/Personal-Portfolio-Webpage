@@ -49,7 +49,7 @@ body {
 #projects > h2 {
   overflow: visible;
 }
-.col-4{
+.col-4 {
   margin-right: 12vw;
 }
 .texts {
@@ -68,8 +68,8 @@ body {
   transition: color 3.2 ease-in-out;
   margin: 20vh 2.5vw 0 2.5vw;
 }
-.card-body .codef, .codes {
-  color: #343a40;
+.card-body .codef,
+.codes {
   opacity: 0;
   transition: opacity 3s, transform 2s;
 }
@@ -79,7 +79,6 @@ body {
   opacity: 100%;
   transform: translateX(-10px);
 }
-
 
 .card:hover .codes {
   color: white;
@@ -122,7 +121,7 @@ body {
 /* Media Queries */
 
 /* Small devices (landscape phones, 767px and down) */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   @keyframes code {
     0% {
       color: var(--bs-danger);
@@ -146,20 +145,45 @@ body {
     animation-duration: 6s;
     animation-iteration-count: infinite;
   }
-  @keyframes codes{
-    from{
-      opacity: 0;
-  transition: opacity 3s, transform 2s;
-    }
-    to{
+  .codef {
+    color: white !important;
+    opacity: 100% !important;
+  }
+  .codes {
+    color: white;
+    opacity: 100%;
+  }
+  @keyframes co {
+    from {
       opacity: 100%;
-      transform: translateX(-10px);
     }
+    to {
+      opacity: 0;
+      /* margin:  0 5px 0 5px; */
+    }
+  }
+   .codef{
+    animation-name: co ;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+  }
+  .codes{
+    animation-name: co ;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+  }
+  #smile{
+    animation-name: co ;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in; 
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .code {
     color: var(--bs-danger);
     opacity: 0;
