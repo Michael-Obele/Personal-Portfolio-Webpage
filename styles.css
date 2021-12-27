@@ -65,7 +65,7 @@ body {
   padding: 10px;
   box-shadow: 8px 10px #181818;
   transition: color 3.2 ease-in-out;
-  margin: 20vh 0 0 5vw;
+  margin: 20vh 2.5vw 0 2.5vw;
 }
 .card-body .codef {
   color: #343a40;
@@ -73,7 +73,7 @@ body {
   transition: opacity 3s, transform 2s;
 }
 
-.card-body:hover .codef {
+.card:hover .codef {
   color: white;
   opacity: 100%;
   transform: translateX(-10px)
@@ -85,13 +85,13 @@ body {
   transition: opacity 3s, transform 2s;
 }
 
-.card-body:hover .codes {
+.card:hover .codes {
   color: white;
   opacity: 100%;
   transform: translateX(10px)
 }
 
-.card-body:hover {
+.card:hover .card-body {
   color: white;
   background-color: #181818;
 }
