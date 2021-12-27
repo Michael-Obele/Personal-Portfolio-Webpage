@@ -49,8 +49,12 @@ body {
 #projects > h2 {
   overflow: visible;
 }
-.col-4 {
-  margin-right: 12vw;
+.col-4:first-child {
+  margin-right: 10rem;
+
+}
+.col-4:last-child {
+  margin-left: 10rem;
 }
 .texts {
   display: flex;
