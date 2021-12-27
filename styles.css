@@ -49,6 +49,9 @@ body {
 #projects > h2 {
   overflow: visible;
 }
+.col-4{
+  margin-right: 12vw;
+}
 .texts {
   display: flex;
   align-items: center;
@@ -62,11 +65,10 @@ body {
 }
 .card {
   padding: 10px;
-  box-shadow: 8px 10px #181818;
   transition: color 3.2 ease-in-out;
   margin: 20vh 2.5vw 0 2.5vw;
 }
-.card-body .codef {
+.card-body .codef, .codes {
   color: #343a40;
   opacity: 0;
   transition: opacity 3s, transform 2s;
@@ -78,11 +80,6 @@ body {
   transform: translateX(-10px);
 }
 
-.card-body .codes {
-  color: #343a40;
-  opacity: 0;
-  transition: opacity 3s, transform 2s;
-}
 
 .card:hover .codes {
   color: white;
@@ -148,6 +145,16 @@ body {
     animation-name: code;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+  }
+  @keyframes codes{
+    from{
+      opacity: 0;
+  transition: opacity 3s, transform 2s;
+    }
+    to{
+      opacity: 100%;
+      transform: translateX(-10px);
+    }
   }
 }
 
