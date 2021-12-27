@@ -3,6 +3,8 @@
 }
 * {
   margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   padding: 0;
 }
 
@@ -53,27 +55,51 @@ body {
   align-items: center;
   justify-content: center;
   transition: color 4.2 ease-out;
-  color: brown;
+  color: var(--bs-orange);
+  font-family: var(--bs-font-monospace);
 }
 .card:hover .texts {
   color: aliceblue;
 }
-.card{
+.card {
   padding: 10px;
   box-shadow: 8px 10px #181818;
   transition: color 3.2 ease-in-out;
+  margin: 20vh 0 0 5vw;
 }
-.card:hover {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 8px 10px red;
+.card-body .codef {
+  color: #343a40;
+  opacity: 0;
+  transition: opacity 3s, transform 2s;
 }
-.card {
-  margin: 20vh 5vw 0 5vw;
 
+.card-body:hover .codef {
+  color: white;
+  opacity: 100%;
+  transform: translateX(-10px)
 }
+
+.card-body .codes {
+  color: #343a40;
+  opacity: 0;
+  transition: opacity 3s, transform 2s;
+}
+
+.card-body:hover .codes {
+  color: white;
+  opacity: 100%;
+  transform: translateX(10px)
+}
+
+.card-body:hover {
+  color: white;
+  background-color: #181818;
+}
+
 .card > img {
   height: 240px;
+  padding: 12px;
+  border-radius: 7%;
 }
 /* End of Project Section */
 /* Start of Footer Section */
@@ -82,9 +108,10 @@ footer {
 }
 #copyright {
   background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   height: 12vh;
 }
-#text{
+#text {
   padding-top: 20vh;
   padding-bottom: calc(50vh - 10%);
   font-size: 8vw;
