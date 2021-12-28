@@ -25,7 +25,7 @@ body {
 
 #welcome-section h1 {
   font-family: var(--bs-font-monospace);
-  font-size: calc(2rem + 1.5vw);
+  font-size: calc(3rem + 1.5vw);
 }
 
 .welcome-section > p {
@@ -43,6 +43,12 @@ body {
 }
 #name:hover .code {
   opacity: 100%;
+}
+#swell{
+  transition:transform 2s
+}
+#swell:hover {
+transform: scale(2);
 }
 /* End of Welcome Section */
 /* Start of Project Section */
@@ -65,8 +71,11 @@ body {
   transition: color 3.2 ease-in-out;
   margin: 20vh 2.5vw 0 2.5vw;
 }
-.card-body .codef,
-.codes {
+.card-body .codes {
+  opacity: 0;
+  transition: opacity 3s, transform 2s;
+}
+.card-body .codef{
   opacity: 0;
   transition: opacity 3s, transform 2s;
 }
@@ -119,6 +128,7 @@ body {
 
 /* Small devices (landscape phones, 767px and down) */
 @media (max-width: 767.98px) {
+/* Keyframes: Start */
   @keyframes code {
     0% {
       color: var(--bs-danger);
@@ -136,6 +146,31 @@ body {
       color: red;
     }
   }
+  
+  @keyframes co {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0;
+      /* margin:  0 5px 0 5px; */
+    }
+  }
+
+  @keyframes sweller{
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* Keyframes End */
   #name .code {
     opacity: 100%;
     animation-name: code;
@@ -150,15 +185,7 @@ body {
     color: white;
     opacity: 100%;
   }
-  @keyframes co {
-    from {
-      opacity: 100%;
-    }
-    to {
-      opacity: 0;
-      /* margin:  0 5px 0 5px; */
-    }
-  }
+  
   .codef {
     animation-name: co;
     animation-duration: 2.1s;
@@ -176,6 +203,12 @@ body {
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
+  }
+  #swell{
+    animation: sweller 2.5s infinite;
+  }
+  #welcome-section h1{
+    font-size: 3.5rem;
   }
 }
 
