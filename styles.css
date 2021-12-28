@@ -192,6 +192,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
+
   .codes {
     animation-name: co;
     animation-duration: 3.5s;
