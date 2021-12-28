@@ -44,11 +44,11 @@ body {
 #name:hover .code {
   opacity: 100%;
 }
-#swell{
-  transition:transform 2s
+#swell {
+  transition: transform 2s;
 }
 #swell:hover {
-transform: scale(2);
+  transform: scale(2);
 }
 /* End of Welcome Section */
 /* Start of Project Section */
@@ -75,7 +75,7 @@ transform: scale(2);
   opacity: 0;
   transition: opacity 3s, transform 2s;
 }
-.card-body .codef{
+.card-body .codef {
   opacity: 0;
   transition: opacity 3s, transform 2s;
 }
@@ -128,7 +128,7 @@ transform: scale(2);
 
 /* Small devices (landscape phones, 767px and down) */
 @media (max-width: 767.98px) {
-/* Keyframes: Start */
+  /* Keyframes: Start */
   @keyframes code {
     0% {
       color: var(--bs-danger);
@@ -146,7 +146,7 @@ transform: scale(2);
       color: red;
     }
   }
-  
+
   @keyframes co {
     from {
       opacity: 100%;
@@ -157,15 +157,15 @@ transform: scale(2);
     }
   }
 
-  @keyframes sweller{
+  @keyframes sweller {
     0% {
       transform: scale(1);
     }
-  
+
     50% {
       transform: scale(2);
     }
-  
+
     100% {
       transform: scale(1);
     }
@@ -185,7 +185,7 @@ transform: scale(2);
     color: white;
     opacity: 100%;
   }
-  
+
   .codef {
     animation-name: co;
     animation-duration: 2.1s;
@@ -204,10 +204,10 @@ transform: scale(2);
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
   }
-  #swell{
+  #swell {
     animation: sweller 2.5s infinite;
   }
-  #welcome-section h1{
+  #welcome-section h1 {
     font-size: 3.5rem;
   }
 }
